@@ -7,18 +7,18 @@
   <meta name="keywords" content="Научиться учиться, Фейнман, Техники обучения, Кауфман">
   <meta name="author" content="Степанов Евгений">
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="./vendor/normalize.css">
+
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body>
-  <div class="page">
+  <div class="root">
 <!---------------------------------------------------------header-->
     <header class="header">
       <div class="logo logo_place_header"></div>
       <h1 class="header__title">Hаучиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?<a class="header__link" href="#"> Узнать &rarr;</a></p>
       <div class="header__main-illustration"></div>
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
     </header>
     <main class="content">
 <!---------------------------------------------------------description-->
@@ -90,9 +90,9 @@
 <!---------------------------------------------------------feynman-->
       <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
-        <h3 class="feynman__subtitle">Выучить и не забыть</h3>
+        <p class="feynman__subtitle">Выучить и не забыть</p>
         <a class="feynman__link" href="#">Подробнее &rarr;</a>
-        <img class="feynman__background-img" src="../how-to-learn/images/feynman/feynman.png" alt="Фейнман">
+        <img class="feynman__background-img" src="./images/feynman/feynman.png" alt="Фейнман">
       </section>
 <!---------------------------------------------------------digits-->
       <section class="digits">
@@ -140,12 +140,13 @@
         <div class="khan__container">
           <p class="khan__author">Салман Хан</p>
           <h2 class="khan__title">Весь мир - школа</h2>
-          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.
-          </p>
+          <blockquote class="khan__quote">
+            <p>Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
+          </blockquote>
           <p class="khan__quote-author">Джолдж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюссер</p>
           <div class="khan__book-container">
-            <div class="khan__book-pic"></div>
+            <img class="khan__book-pic" src="images/khan/khan-book.jpg">
             <a class="khan__buy-link" href="#">Купить книгу &rarr;</a>
           </div>
         </div>
@@ -196,17 +197,17 @@
             <p class="table__text table__text_theme_dark">Уделите внимание количеству и скорости</p>
           </li>
         </ol>
-        <div class="kaufman__triangle"></div>
+        <div class="kaufman__triangle rotation"></div>
       </section>
 <!---------------------------------------------------------recources-->
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
         <div class="resources__logo-zone">
-          <img  class="resources__logo src=" src="./images/resources/resources-arzamas.svg" alt="Арзамас">
-          <img  class="resources__logo src=" src="./images/resources/resources-n1.svg" alt="Н1">
-          <img  class="resources__logo src=" src="./images/resources/resources-strelka.svg" alt="Стрелка">
-          <img  class="resources__logo src=" src="./images/resources/resources-polka.svg" alt="Полка">
+          <a href="#"><img class="resources__logo" src="./images/resources/resources-arzamas.svg" alt="Арзамас"></a>
+          <a href="#"><img class="resources__logo" src="./images/resources/resources-n1.svg" alt="Н1"></a>
+          <a href="#"><img class="resources__logo" src="./images/resources/resources-strelka.svg" alt="Стрелка"></a>
+          <a href="#"><img class="resources__logo" src="./images/resources/resources-polka.svg" alt="Полка"></a>
         </div>
       </section>
     </main>
@@ -231,7 +232,7 @@
             <a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/footer/facebook_color_white.svg" alt="Фейсбук">Facebook</a>
             <a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/footer/vk_color_white.svg" alt="Вконтакте">ВКонтакте</a>
             <a class="footer__column-link" href="#"><img class="footer__social-icon" src="./images/footer/instagram_color_white.svg" alt="Инстаграм">Instagram</a>
-            </nav>
+          </nav>
         </div>
       </div>
     </footer>
